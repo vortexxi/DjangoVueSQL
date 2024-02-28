@@ -1,0 +1,61 @@
+<!DOCTYPE html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Vuejs-Django-PostgreSQL</title>
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar navbar-expand-lg bg-light justify-content-center">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <router-link class="btn btn-outline-secondary" to="/">Home</router-link>
+                  </li>
+                  <li class="nav-item">
+                    <router-link class="btn btn-outline-secondary" to="/department">Departments</router-link>
+                  </li>
+                  <li class="nav-item">
+                    <router-link class="btn btn-outline-secondary" to="/employee">Employees</router-link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
+        <p>
+          <!-- use the router-link component for navigation. -->
+          <!-- specify the link by passing the `to` prop. -->
+          <!-- `<router-link>` will render an `<a>` tag with the correct `href` attribute -->
+          
+          
+          
+        </p>
+        <!-- route outlet -->
+        <!-- component matched by the route will render here -->
+        <router-view></router-view>
+      </div>
+      
+      <!-- The order of the scripts it's important!!! -->
+    <script src="env.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="Home.js"></script>
+    <script src="Department.js"></script>
+    <script src="Employee.js"></script>
+    <script src="app.js"></script>
+    
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
